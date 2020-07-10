@@ -1,0 +1,40 @@
+body{
+    background-color: #325D79;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+}
+#header {
+    width: 400px;
+    height: 550px;
+    background-size:cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1,h3{
+    text-align: center;
+    color:white;
+}
+#box{
+        background-color:#9BD7D1;
+        height: 100%;
+}
+.p1{
+    background-color: #efeeee;
+    color: #f26627;
+}
+.p2{
+    color: #efeeee;
+    background-color: #f26627;
+}
+#quote{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: larger;
+}
