@@ -1,20 +1,14 @@
 body {
     font-size: 15px;
-  }
-  
-  button {
-    background: #ffc600;
-    border: 0;
-    padding: 10px 20px;
+    
   }
   
   img {
     max-width: 100%;
   }
   
-  /* .wrapper */
-  
-  .wrapper {
+ 
+  .container {
     display: grid;
     grid-gap: 20px;
   }
@@ -23,24 +17,47 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
-      "hero hero cta1"
-      "hero hero cta2"
-      "hero hero cta2"
+      "main main cta1"
+      "main main cta2"
+      "main main cta2"
+  }
+  .top2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "main main cta1"
+      "main main cta2"
   }
   
-  .hero {
-    grid-area: hero;
+  .main {
+    grid-area: main;
     min-height: 200px;
-    background: white url(pizza2.jpeg);
+    
     background-size: 100%;
     padding: 50px;
     display: flex;
       }
   
+  .pizza{
+    background-image:url(pizza.jpg);
+  }
+
+  .burger{
+    background-image:url(burger.jpg);
+  }
+
+  .pasta{
+    background-image:url(pasta.jpg);
+  }
+
+  .beer{
+    background-image:url(beer.jpg);
+  }
 
   
   .cta {
-    background: yellow;
+    background: #510a32;
+    color: #ee4540;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -53,33 +70,27 @@ body {
     font-weight: 300;
   }
   
-  /* Navigation */
   
   .menu ul {
     display: grid;
     grid-gap: 10px;
     list-style: none;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: auto auto auto auto;
   }
   
   .menu a {
-    background: yellow;
+    background: #510a32;
     display: block;
     text-decoration: none;
     padding: 10px;
     text-align: center;
-    color: black;
+    color: #ee4540;
     text-transform: uppercase;
     font-size: 20px;
   }
-  
-  [aria-controls="menu-list"] {
-    display: none;
-  }
-  
-
+    
   body {
-    background-color: white;
+    background-color: #ee4540;
     margin: 50px;
     background-attachment: fixed;
   }
