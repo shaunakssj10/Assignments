@@ -32,7 +32,6 @@ body {
   .main {
     grid-area: main;
     min-height: 200px;
-    
     background-size: 100%;
     padding: 50px;
     display: flex;
