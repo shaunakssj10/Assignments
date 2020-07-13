@@ -8,39 +8,39 @@
 <body>
   <main>
     <h1>StayFit Gym survey Form</h1>
-    <div class="master-div-style">
+    <div class="master">
       <p id="description">Tell us what do you think about our gym for us to improve it.</p>
-      <form id="survey-form" >
+      <form>
         <div class="form-rows">
           <div class="labels">
-            <label for="name" id="name-label">Name</label>
+            <label>Name</label>
           </div>
           <div class="fields">
-            <input type="text" id="name" class="input-fields" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name" required>
           </div>
         </div>
         <div class="form-rows">
           <div class="labels">
-            <label for="email" id="email-label">Email</label>
+            <label>Email</label>
           </div>
           <div class="fields">
-            <input type="email" id="email" class="input-fields" placeholder="Enter your email address" required>
+            <input type="email" placeholder="Enter your email address" required>
           </div>
         </div>
         <div class="form-rows">
           <div class="labels">
-            <label for="number" id="number-label">On a scale of 1-10, how do you rate StayFit?</label>
+            <label >On a scale of 1-10, how do you rate StayFit?</label>
           </div>
           <div class="fields">
-            <input type="number" id="number" class="input-fields" placeholder="Enter a number between 1 and 10" min="1" max="10">
+            <input type="number" placeholder="Enter a number between 1 and 10" min="1" max="10">
           </div>
         </div>
         <div class="form-rows">
           <div class="labels">
-            <label for="dropdown" id="dropdown-label">Would you recommend StayFit to a Friend?</label>
+            <label >Would you recommend StayFit to a Friend?</label>
           </div>
           <div class="fields">
-            <select name="Location of positive event" id="dropdown" class="dropdown">
+            <select name="Location of positive event" >
                 <option value="Definitely">Definitely</option>
                 <option value="Maybe">Maybe</option>
                 <option value="Never">Never</option>
@@ -49,26 +49,26 @@
         </div>
         <div class="form-rows">
           <div class="labels">
-            <label for="time-of-day">At what time of day do you go to StayFit?</label>
+            <label>At what time of day do you go to StayFit?</label>
           </div>
           <div class="fields">
             <ul id="time-of-day" style="list-style: none;">
               <li class="radio">
                 <label>
                   Morning
-                  <input name="time-radio" type="radio" value="1" class="user-selection">
+                  <input  type="radio" >
                 </label>
               </li>
               <li class="radio">
                 <label>
                   Afternoon
-                  <input name="time-radio" type="radio" value="2" class="user-selection">
+                  <input  type="radio" >
                 </label>
               </li>
               <li class="radio">
                 <label>
                   Evening
-                  <input name="time-radio" type="radio" value="3" class="user-selection">
+                  <input  type="radio" >
                 </label>
               </li>
             </ul>
@@ -76,7 +76,7 @@
         </div>
         <div class="form-rows">
           <div class="labels">
-            <label for="feelings">
+            <label>
               How do you feel after going to StayFit?
               <br>
               (Select all that apply)
@@ -86,31 +86,31 @@
             <ul id="feelings" style="list-style: none;">
               <li class="radio">
                 <label>
-                  <input name="feeling-check" value="1" type="checkbox" class="user-selection">
+                  <input  type="checkbox" >
                   Fresh
                 </label>
               </li>
               <li class="radio">
                 <label>
-                  <input name="feeling-check" value="2" type="checkbox" class="user-selection">
+                  <input type="checkbox" >
                   Relaxed
                 </label>
               </li>
               <li class="radio">
                 <label>
-                  <input name="feeling-check" value="3" type="checkbox" class="user-selection">
+                  <input type="checkbox" >
                   Tired
                 </label>
               </li>
               <li class="radio">
                 <label>
-                  <input name="feeling-check" value="4" type="checkbox" class="user-selection">
+                  <input type="checkbox" >
                   Pumped
                 </label>
               </li>
               <li class="radio">
                 <label>
-                  <input name="feeling-check" value="5" type="checkbox" class="user-selection">
+                  <input type="checkbox" >
                   Sick
                 </label>
               </li>

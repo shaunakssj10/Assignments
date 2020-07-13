@@ -8,12 +8,11 @@ body {
     display: block;
   }
   
-  .master-div-style {
+  .master {
     margin: auto;
     width: 800px;
     background-color: #f1e2ca;
     color: #4b7a90;
-    border-radius: 10px;
     padding: 20px 10px 10px 10px;
   }
   
@@ -38,34 +37,20 @@ body {
     width: 280px;
     padding: 5px;
     margin: 10px;
-    border: 1px solid #c0c0c0;
+    border: 1px 
     border-radius: 4px;
   }
   
-  .dropdown {
-    height: 35px;
-    width: 140px;
-    padding: 5px;
-    margin: 15px 10px 10px 10px;
-    border: 1px solid #c0c0c0;
-    border-radius: 4px;
-  }
-  
+
   .radio {
     position: relative;
-    left: -43px;
     margin-left: 10px;
     display: block;
     padding-bottom: 10px;
   }
   
-  .user-selection {
-    float: left;
-    margin-right: 5px;
-  }
-  
   .button {
-    font-size: 1em;
+    font-size: 10px;
     background-color: #142b43;
     color: white;
     border: 0px solid;
