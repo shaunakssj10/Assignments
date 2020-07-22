@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <title>
+    Temp Converter
+  </title>
+</head>
+
+<body>
+  <label>Fahrenheit: </label>
+  <input id="ipFt" type="number" name="input" placeholder="Fahrenheit" required>
+  <input type="submit" onclick="tempConverter()" value="Submit" />
+
+  <p>Celcius: <div id="opCelcius"></div></p>
+
+  <script>
+    function tempConverter() {
+      ipTemp = document.getElementById("ipFt").value;
+      document.getElementById("opCelcius").innerHTML = (ipTemp - 32) / 1.8 + " degrees";
+    }
+  </script>
+
+</body>
+
+</html>

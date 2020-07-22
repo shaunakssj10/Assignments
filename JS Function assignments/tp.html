@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>JavaScript .forEach() Method</title>
+</head>
+
+<script>
+function isEven(num) { 
+    return(num%2 == 0); 
+}
+
+var arr = [1, 2, 3, 4, 5, 6];
+function find(arr, isEven){
+    for (var i =0; i<= 5; i++){
+        var a;
+        a = isEven(arr[i]);
+        if (a){
+            alert(a[i]);
+            break;
+        }
+    }
+}
+</script>
+</html>
