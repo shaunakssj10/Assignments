@@ -1,0 +1,33 @@
+FIND QUERIES
+1 db.movies.find().pretty();
+2 db.movies.find({writer: "Quetin Tarantino"})
+3 db.movies.find({actors: "Bradd Pitt"})
+4 db.movies.find({franchise: "The Hobbit"})
+5 db.movies.find({$and: [{"year": {$gt: "1900"}}, {"year": {$lt: "2000"}}]})
+6 db.movies.find({$or: [{"year": {$lt: "2000"}}, {"year": {$gt: "2010"}}]})
+
+UPDATE QUERIES
+1 db.movies.update({"title": "The Hobbit: An Unexpected Journey"}, {"synopsis": "A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug."})
+2 db.movies.update({"title": "The Hobbit: The Desolation of Smaug"}, {"synopsis": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring."})
+3 db.movies.update({title: "Pulp Fiction"}, {$push: {actors: "Samuel L. Jackson"}})
+
+TEXT SEARCH
+Index is created
+1 db.movies.find({synopsis:{$regex:"Bilbo"}})
+2 db.movies.find({synopsis:{$regex:"Gandalf"}})
+3 db.movies.find({$and:[{synopsis:{$regex:"Bilbo"}}, {synopsis:{$not:/Gandalf/}}]})
+4 db.movies.find({$or:[{synopsis:{$regex:"dwarves"}}, {synopsis:{$regex:"hobbit"}}]})
+5 db.movies.find({$and:[{synopsis:{$regex:"gold"}}, {synopsis:{$regex:"dragon"}}]})
+
+DELETE QUERIES
+1 db.movies.find({synopsis:{$regex:"Bilbo"}})
+2 db.movies.find({synopsis:{$regex:"Gandalf"}})
+
+COLLECTION QUERIES
+1 db.users.find({}).pretty()
+2 db.posts.find({}).pretty()
+3 db.posts.find({username: "GoodGuyGreg"}).pretty()
+4 db.posts.find({username: "ScumbagSteve"}).pretty()
+5 db.comments.find({}).pretty()
+6 db.comments.find({username: "GoodGuyGreg"}).pretty()
+7 db.comments.find({username: "ScumbagSteve"}).pretty()
